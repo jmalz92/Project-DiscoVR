@@ -3,10 +3,11 @@ using System.Collections;
 
 public class SphereCollision : MonoBehaviour {
 
+    public int level = 1;
 
     void OnTriggerEnter(Collider col)
     {
-        Application.LoadLevel(1);
+        Application.LoadLevel(level);
     }
 
 	// Use this for initialization
